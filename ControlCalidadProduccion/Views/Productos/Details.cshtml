@@ -1,0 +1,42 @@
+﻿@model ControlCalidadProduccion.Models.Producto
+
+@{
+    ViewData["Title"] = "Detalles del Producto";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <h4>Producto</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">@Html.DisplayNameFor(m => m.Nombre)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(m => m.Nombre)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(m => m.Descripcion)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(m => m.Descripcion)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(m => m.NormaGrasa)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(m => m.NormaGrasa)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(m => m.NormaAcidez)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(m => m.NormaAcidez)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(m => m.NormaProteina)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(m => m.NormaProteina)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(m => m.NormaPH)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(m => m.NormaPH)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(m => m.NormaHumedad)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(m => m.NormaHumedad)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(m => m.FechaCreacion)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(m => m.FechaCreacion)</dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-primary">Editar</a>
+    <a asp-action="Index" class="btn btn-secondary">Volver al listado</a>
+</div>

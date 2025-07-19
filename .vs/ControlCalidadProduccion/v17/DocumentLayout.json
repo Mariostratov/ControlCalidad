@@ -1,0 +1,485 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|c:\\users\\mariosc\\source\\repos\\controlcalidadproduccion\\controlcalidadproduccion\\controllers\\medicionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|solutionrelative:controlcalidadproduccion\\controllers\\medicionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Migrations\\20250719005948_MakeProductoIdNullable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ControlCalidadProduccion\\Migrations\\20250719005948_MakeProductoIdNullable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Migrations\\20250719005721_AddProductoToLote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ControlCalidadProduccion\\Migrations\\20250719005721_AddProductoToLote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Migrations\\20250718191653_FixMedicionesValidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ControlCalidadProduccion\\Migrations\\20250718191653_FixMedicionesValidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Migrations\\20250718183324_FixDecimalPrecisionAndFechaCreacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ControlCalidadProduccion\\Migrations\\20250718183324_FixDecimalPrecisionAndFechaCreacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Data\\Migrations\\20250719011720_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ControlCalidadProduccion\\Data\\Migrations\\20250719011720_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|c:\\users\\mariosc\\source\\repos\\controlcalidadproduccion\\controlcalidadproduccion\\models\\medicion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|solutionrelative:controlcalidadproduccion\\models\\medicion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|c:\\users\\mariosc\\source\\repos\\controlcalidadproduccion\\controlcalidadproduccion\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|solutionrelative:controlcalidadproduccion\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|c:\\users\\mariosc\\source\\repos\\controlcalidadproduccion\\controlcalidadproduccion\\views\\mediciones\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|solutionrelative:controlcalidadproduccion\\views\\mediciones\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|c:\\users\\mariosc\\source\\repos\\controlcalidadproduccion\\controlcalidadproduccion\\views\\mediciones\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|solutionrelative:controlcalidadproduccion\\views\\mediciones\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|c:\\users\\mariosc\\source\\repos\\controlcalidadproduccion\\controlcalidadproduccion\\views\\mediciones\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|solutionrelative:controlcalidadproduccion\\views\\mediciones\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|c:\\users\\mariosc\\source\\repos\\controlcalidadproduccion\\controlcalidadproduccion\\views\\mediciones\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|solutionrelative:controlcalidadproduccion\\views\\mediciones\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|c:\\users\\mariosc\\source\\repos\\controlcalidadproduccion\\controlcalidadproduccion\\views\\shared\\graficos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|solutionrelative:controlcalidadproduccion\\views\\shared\\graficos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|c:\\users\\mariosc\\source\\repos\\controlcalidadproduccion\\controlcalidadproduccion\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|solutionrelative:controlcalidadproduccion\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|c:\\users\\mariosc\\source\\repos\\controlcalidadproduccion\\controlcalidadproduccion\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|solutionrelative:controlcalidadproduccion\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|c:\\users\\mariosc\\source\\repos\\controlcalidadproduccion\\controlcalidadproduccion\\controllers\\lotescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|solutionrelative:controlcalidadproduccion\\controllers\\lotescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|c:\\users\\mariosc\\source\\repos\\controlcalidadproduccion\\controlcalidadproduccion\\models\\homeindexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|solutionrelative:controlcalidadproduccion\\models\\homeindexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|c:\\users\\mariosc\\source\\repos\\controlcalidadproduccion\\controlcalidadproduccion\\models\\lote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|solutionrelative:controlcalidadproduccion\\models\\lote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|c:\\users\\mariosc\\source\\repos\\controlcalidadproduccion\\controlcalidadproduccion\\views\\mediciones\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|solutionrelative:controlcalidadproduccion\\views\\mediciones\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|c:\\users\\mariosc\\source\\repos\\controlcalidadproduccion\\controlcalidadproduccion\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|solutionrelative:controlcalidadproduccion\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|c:\\users\\mariosc\\source\\repos\\controlcalidadproduccion\\controlcalidadproduccion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|solutionrelative:controlcalidadproduccion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|c:\\users\\mariosc\\source\\repos\\controlcalidadproduccion\\controlcalidadproduccion\\views\\productos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|solutionrelative:controlcalidadproduccion\\views\\productos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|c:\\users\\mariosc\\source\\repos\\controlcalidadproduccion\\controlcalidadproduccion\\views\\productos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|solutionrelative:controlcalidadproduccion\\views\\productos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|c:\\users\\mariosc\\source\\repos\\controlcalidadproduccion\\controlcalidadproduccion\\views\\productos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|solutionrelative:controlcalidadproduccion\\views\\productos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|c:\\users\\mariosc\\source\\repos\\controlcalidadproduccion\\controlcalidadproduccion\\views\\lotes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|solutionrelative:controlcalidadproduccion\\views\\lotes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|c:\\users\\mariosc\\source\\repos\\controlcalidadproduccion\\controlcalidadproduccion\\views\\lotes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|solutionrelative:controlcalidadproduccion\\views\\lotes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|c:\\users\\mariosc\\source\\repos\\controlcalidadproduccion\\controlcalidadproduccion\\controllers\\reportescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|solutionrelative:controlcalidadproduccion\\controllers\\reportescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|c:\\users\\mariosc\\source\\repos\\controlcalidadproduccion\\controlcalidadproduccion\\views\\lotes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|solutionrelative:controlcalidadproduccion\\views\\lotes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|c:\\users\\mariosc\\source\\repos\\controlcalidadproduccion\\controlcalidadproduccion\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A6B5894E-A2E5-49FA-99E1-4B0FD3C721D0}|ControlCalidadProduccion\\ControlCalidadProduccion.csproj|solutionrelative:controlcalidadproduccion\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Medicion.cs",
+              "DocumentMoniker": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Models\\Medicion.cs",
+              "RelativeDocumentMoniker": "ControlCalidadProduccion\\Models\\Medicion.cs",
+              "ToolTip": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Models\\Medicion.cs",
+              "RelativeToolTip": "ControlCalidadProduccion\\Models\\Medicion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T18:37:52.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "ControlCalidadProduccion\\Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Models\\Producto.cs",
+              "RelativeToolTip": "ControlCalidadProduccion\\Models\\Producto.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAIwCsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T18:29:51.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Views\\Mediciones\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ControlCalidadProduccion\\Views\\Mediciones\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Views\\Mediciones\\Edit.cshtml",
+              "RelativeToolTip": "ControlCalidadProduccion\\Views\\Mediciones\\Edit.cshtml",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAkwLIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-18T18:15:41.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MedicionesController.cs",
+              "DocumentMoniker": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Controllers\\MedicionesController.cs",
+              "RelativeDocumentMoniker": "ControlCalidadProduccion\\Controllers\\MedicionesController.cs",
+              "ToolTip": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Controllers\\MedicionesController.cs",
+              "RelativeToolTip": "ControlCalidadProduccion\\Controllers\\MedicionesController.cs",
+              "ViewState": "AgIAAOcAAAAAAAAAAAAkwPgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T18:38:38.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Views\\Mediciones\\Details.cshtml",
+              "RelativeDocumentMoniker": "ControlCalidadProduccion\\Views\\Mediciones\\Details.cshtml",
+              "ToolTip": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Views\\Mediciones\\Details.cshtml",
+              "RelativeToolTip": "ControlCalidadProduccion\\Views\\Mediciones\\Details.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAkwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-18T18:15:04.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Views\\Mediciones\\Delete.cshtml",
+              "RelativeDocumentMoniker": "ControlCalidadProduccion\\Views\\Mediciones\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Views\\Mediciones\\Delete.cshtml",
+              "RelativeToolTip": "ControlCalidadProduccion\\Views\\Mediciones\\Delete.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAowB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-18T18:13:26.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Views\\Mediciones\\Create.cshtml",
+              "RelativeDocumentMoniker": "ControlCalidadProduccion\\Views\\Mediciones\\Create.cshtml",
+              "ToolTip": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Views\\Mediciones\\Create.cshtml",
+              "RelativeToolTip": "ControlCalidadProduccion\\Views\\Mediciones\\Create.cshtml",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAAALQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-18T18:40:39.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Graficos.cshtml",
+              "DocumentMoniker": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Views\\Shared\\Graficos.cshtml",
+              "RelativeDocumentMoniker": "ControlCalidadProduccion\\Views\\Shared\\Graficos.cshtml",
+              "ToolTip": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Views\\Shared\\Graficos.cshtml",
+              "RelativeToolTip": "ControlCalidadProduccion\\Views\\Shared\\Graficos.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-19T03:31:04.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ControlCalidadProduccion\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ControlCalidadProduccion\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAowGkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T00:52:12.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ControlCalidadProduccion\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ControlCalidadProduccion\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAALMAAAAAAAAAAAAowMQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-19T00:49:30.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LotesController.cs",
+              "DocumentMoniker": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Controllers\\LotesController.cs",
+              "RelativeDocumentMoniker": "ControlCalidadProduccion\\Controllers\\LotesController.cs",
+              "ToolTip": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Controllers\\LotesController.cs",
+              "RelativeToolTip": "ControlCalidadProduccion\\Controllers\\LotesController.cs",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAswLcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T18:10:33.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "HomeIndexViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Models\\HomeIndexViewModel.cs",
+              "RelativeDocumentMoniker": "ControlCalidadProduccion\\Models\\HomeIndexViewModel.cs",
+              "ToolTip": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Models\\HomeIndexViewModel.cs",
+              "RelativeToolTip": "ControlCalidadProduccion\\Models\\HomeIndexViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T04:53:19.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Lote.cs",
+              "DocumentMoniker": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Models\\Lote.cs",
+              "RelativeDocumentMoniker": "ControlCalidadProduccion\\Models\\Lote.cs",
+              "ToolTip": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Models\\Lote.cs",
+              "RelativeToolTip": "ControlCalidadProduccion\\Models\\Lote.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T17:48:36.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Views\\Mediciones\\Index.cshtml",
+              "RelativeDocumentMoniker": "ControlCalidadProduccion\\Views\\Mediciones\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Views\\Mediciones\\Index.cshtml",
+              "RelativeToolTip": "ControlCalidadProduccion\\Views\\Mediciones\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-18T18:58:36.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "ControlCalidadProduccion\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "ControlCalidadProduccion\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T18:08:28.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Program.cs",
+              "RelativeDocumentMoniker": "ControlCalidadProduccion\\Program.cs",
+              "ToolTip": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Program.cs",
+              "RelativeToolTip": "ControlCalidadProduccion\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T19:20:21.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Views\\Productos\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ControlCalidadProduccion\\Views\\Productos\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Views\\Productos\\Edit.cshtml",
+              "RelativeToolTip": "ControlCalidadProduccion\\Views\\Productos\\Edit.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAkwE0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-19T04:06:59.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Views\\Productos\\Details.cshtml",
+              "RelativeDocumentMoniker": "ControlCalidadProduccion\\Views\\Productos\\Details.cshtml",
+              "ToolTip": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Views\\Productos\\Details.cshtml",
+              "RelativeToolTip": "ControlCalidadProduccion\\Views\\Productos\\Details.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAkwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-19T04:15:28.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Views\\Productos\\Create.cshtml",
+              "RelativeDocumentMoniker": "ControlCalidadProduccion\\Views\\Productos\\Create.cshtml",
+              "ToolTip": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Views\\Productos\\Create.cshtml",
+              "RelativeToolTip": "ControlCalidadProduccion\\Views\\Productos\\Create.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-19T04:10:59.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20250719005721_AddProductoToLote.cs",
+              "DocumentMoniker": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Migrations\\20250719005721_AddProductoToLote.cs",
+              "RelativeDocumentMoniker": "ControlCalidadProduccion\\Migrations\\20250719005721_AddProductoToLote.cs",
+              "ToolTip": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Migrations\\20250719005721_AddProductoToLote.cs",
+              "RelativeToolTip": "ControlCalidadProduccion\\Migrations\\20250719005721_AddProductoToLote.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T00:57:21.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20250719005948_MakeProductoIdNullable.cs",
+              "DocumentMoniker": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Migrations\\20250719005948_MakeProductoIdNullable.cs",
+              "RelativeDocumentMoniker": "ControlCalidadProduccion\\Migrations\\20250719005948_MakeProductoIdNullable.cs",
+              "ToolTip": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Migrations\\20250719005948_MakeProductoIdNullable.cs",
+              "RelativeToolTip": "ControlCalidadProduccion\\Migrations\\20250719005948_MakeProductoIdNullable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T00:59:48.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20250719011720_InitialMigration.cs",
+              "DocumentMoniker": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Data\\Migrations\\20250719011720_InitialMigration.cs",
+              "RelativeDocumentMoniker": "ControlCalidadProduccion\\Data\\Migrations\\20250719011720_InitialMigration.cs",
+              "ToolTip": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Data\\Migrations\\20250719011720_InitialMigration.cs",
+              "RelativeToolTip": "ControlCalidadProduccion\\Data\\Migrations\\20250719011720_InitialMigration.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T01:17:20.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Views\\Lotes\\Create.cshtml",
+              "RelativeDocumentMoniker": "ControlCalidadProduccion\\Views\\Lotes\\Create.cshtml",
+              "ToolTip": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Views\\Lotes\\Create.cshtml",
+              "RelativeToolTip": "ControlCalidadProduccion\\Views\\Lotes\\Create.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-18T18:09:35.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Views\\Lotes\\Index.cshtml",
+              "RelativeDocumentMoniker": "ControlCalidadProduccion\\Views\\Lotes\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Views\\Lotes\\Index.cshtml",
+              "RelativeToolTip": "ControlCalidadProduccion\\Views\\Lotes\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-18T18:56:04.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ReportesController.cs",
+              "DocumentMoniker": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Controllers\\ReportesController.cs",
+              "RelativeDocumentMoniker": "ControlCalidadProduccion\\Controllers\\ReportesController.cs",
+              "ToolTip": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Controllers\\ReportesController.cs",
+              "RelativeToolTip": "ControlCalidadProduccion\\Controllers\\ReportesController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAkwEEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T21:53:18.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Views\\Lotes\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ControlCalidadProduccion\\Views\\Lotes\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Views\\Lotes\\Edit.cshtml",
+              "RelativeToolTip": "ControlCalidadProduccion\\Views\\Lotes\\Edit.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-18T18:10:14.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ControlCalidadProduccion\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ControlCalidadProduccion\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-18T21:39:07.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20250718183324_FixDecimalPrecisionAndFechaCreacion.cs",
+              "DocumentMoniker": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Migrations\\20250718183324_FixDecimalPrecisionAndFechaCreacion.cs",
+              "RelativeDocumentMoniker": "ControlCalidadProduccion\\Migrations\\20250718183324_FixDecimalPrecisionAndFechaCreacion.cs",
+              "ToolTip": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Migrations\\20250718183324_FixDecimalPrecisionAndFechaCreacion.cs",
+              "RelativeToolTip": "ControlCalidadProduccion\\Migrations\\20250718183324_FixDecimalPrecisionAndFechaCreacion.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAgwBUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T18:33:24.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20250718191653_FixMedicionesValidation.cs",
+              "DocumentMoniker": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Migrations\\20250718191653_FixMedicionesValidation.cs",
+              "RelativeDocumentMoniker": "ControlCalidadProduccion\\Migrations\\20250718191653_FixMedicionesValidation.cs",
+              "ToolTip": "C:\\Users\\MarioSC\\Source\\Repos\\ControlCalidadProduccion\\ControlCalidadProduccion\\Migrations\\20250718191653_FixMedicionesValidation.cs",
+              "RelativeToolTip": "ControlCalidadProduccion\\Migrations\\20250718191653_FixMedicionesValidation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T19:16:53.349Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

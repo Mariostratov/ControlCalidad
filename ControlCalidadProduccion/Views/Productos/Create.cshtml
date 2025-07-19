@@ -1,0 +1,72 @@
+﻿@model ControlCalidadProduccion.Models.Producto
+
+@{
+    ViewData["Title"] = "Crear Producto";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Nombre" class="control-label"></label>
+                <input asp-for="Nombre" class="form-control" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Descripcion" class="control-label"></label>
+                <textarea asp-for="Descripcion" class="form-control"></textarea>
+                <span asp-validation-for="Descripcion" class="text-danger"></span>
+            </div>
+
+            <h4 class="mt-4">Normas de Calidad</h4>
+            <hr />
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="NormaGrasa" class="control-label"></label>
+                        <input asp-for="NormaGrasa" class="form-control" type="number" step="0.01" />
+                        <span asp-validation-for="NormaGrasa" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="NormaAcidez" class="control-label"></label>
+                        <input asp-for="NormaAcidez" class="form-control" type="number" step="0.01" />
+                        <span asp-validation-for="NormaAcidez" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="NormaProteina" class="control-label"></label>
+                        <input asp-for="NormaProteina" class="form-control" type="number" step="0.01" />
+                        <span asp-validation-for="NormaProteina" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="NormaPH" class="control-label"></label>
+                        <input asp-for="NormaPH" class="form-control" type="number" step="0.01" />
+                        <span asp-validation-for="NormaPH" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="NormaHumedad" class="control-label"></label>
+                        <input asp-for="NormaHumedad" class="form-control" type="number" step="0.01" />
+                        <span asp-validation-for="NormaHumedad" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group mt-4">
+                <input type="submit" value="Crear" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}
