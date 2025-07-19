@@ -43,6 +43,7 @@
     var proteinaJson = JsonSerializer.Serialize(proteina);
     var phJson = JsonSerializer.Serialize(ph);
     var humedadJson = JsonSerializer.Serialize(humedad);
+    var normasJson = JsonSerializer.Serialize(normas);
 
     var codigoLote = primeraMedicion?.Lote?.Codigo ?? "N/A";
     var fechaLote = primeraMedicion?.Lote?.Fecha.ToString("dd/MM/yyyy") ?? "Sin fecha";
@@ -311,16 +312,9 @@
                     const datosProteina = @Html.Raw(proteinaJson);
                     const datosPH = @Html.Raw(phJson);
                     const datosHumedad = @Html.Raw(humedadJson);
+                    const normas = @Html.Raw(normasJson);
 
-                    const normas = {
-                        Grasa: Array(datosGrasa.length).fill(@normas.Grasa),
-                        Acidez: Array(datosAcidez.length).fill(@normas.Acidez),
-                        Proteina: Array(datosProteina.length).fill(@normas.Proteina),
-                        PH: Array(datosPH.length).fill(@normas.PH),
-                        Humedad: Array(datosHumedad.length).fill(@normas.Humedad)
-                    };
-
-                    function crearGrafico(canvasId, label, datos, norma, color) {
+                    function crearGrafico(canvasId, label, datos, normaValor, color) {
                         new Chart(document.getElementById(canvasId), {
                             type: 'line',
                             data: {
@@ -336,7 +330,7 @@
                                     },
                                     {
                                         label: 'Norma',
-                                        data: norma,
+                                        data: Array(datos.length).fill(normaValor),
                                         borderColor: 'rgba(255, 99, 132, 1)',
                                         borderDash: [5, 5],
                                         pointRadius: 0,
@@ -351,7 +345,12 @@
                                     legend: { position: 'top' }
                                 },
                                 scales: {
-                                    y: { beginAtZero: true }
+                                    y: {
+                                        beginAtZero: true,
+                                        ticks: {
+                                            precision: 2 // Muestra 2 decimales en el eje Y
+                                        }
+                                    }
                                 }
                             }
                         });
