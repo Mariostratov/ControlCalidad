@@ -1,0 +1,369 @@
+﻿@using Microsoft.AspNetCore.Mvc.Rendering
+@using ControlCalidadProduccion.Models
+@using System.Text.Json
+
+@{
+    ViewData["Title"] = "Reportes de Control de Calidad";
+
+    var productos = ViewBag.Productos as List<SelectListItem> ?? new List<SelectListItem>();
+    var lotes = ViewBag.Lotes as List<SelectListItem> ?? new List<SelectListItem>();
+    var ultimasMediciones = ViewBag.UltimasMediciones as List<Medicion> ?? new List<Medicion>();
+    var conteoLotes = ViewBag.ConteoLotes as int? ?? 0;
+    var conteoProductos = ViewBag.ConteoProductos as int? ?? 0;
+    var conteoMediciones = ViewBag.ConteoMediciones as int? ?? 0;
+    var productoIdSeleccionado = ViewBag.ProductoIdSeleccionado as string ?? "";
+    var loteIdSeleccionado = ViewBag.LoteIdSeleccionado as string ?? "";
+
+    // Datos para gráficos
+    var mediciones = ViewBag.Mediciones as IEnumerable<Medicion> ?? new List<Medicion>();
+    var primeraMedicion = ViewBag.PrimeraMedicion as Medicion;
+
+    var mostrarGraficos = mediciones.Any();
+
+    // Preparar datos para gráficos
+    var etiquetas = mediciones.Select(m => $"M{m.NumeroMedicion}").ToList();
+    var grasa = mediciones.Select(m => m.Grasa).ToList();
+    var acidez = mediciones.Select(m => m.Acidez).ToList();
+    var proteina = mediciones.Select(m => m.Proteina).ToList();
+    var ph = mediciones.Select(m => m.PH).ToList();
+    var humedad = mediciones.Select(m => m.Humedad).ToList();
+
+    var normas = new
+    {
+        Grasa = primeraMedicion?.Producto?.NormaGrasa ?? 0m,
+        Acidez = primeraMedicion?.Producto?.NormaAcidez ?? 0m,
+        Proteina = primeraMedicion?.Producto?.NormaProteina ?? 0m,
+        PH = primeraMedicion?.Producto?.NormaPH ?? 0m,
+        Humedad = primeraMedicion?.Producto?.NormaHumedad ?? 0m
+    };
+
+    var etiquetasJson = JsonSerializer.Serialize(etiquetas);
+    var grasaJson = JsonSerializer.Serialize(grasa);
+    var acidezJson = JsonSerializer.Serialize(acidez);
+    var proteinaJson = JsonSerializer.Serialize(proteina);
+    var phJson = JsonSerializer.Serialize(ph);
+    var humedadJson = JsonSerializer.Serialize(humedad);
+
+    var codigoLote = primeraMedicion?.Lote?.Codigo ?? "N/A";
+    var fechaLote = primeraMedicion?.Lote?.Fecha.ToString("dd/MM/yyyy") ?? "Sin fecha";
+    var nombreProducto = primeraMedicion?.Producto?.Nombre ?? "Ningún producto seleccionado";
+}
+
+<div class="row mb-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h3><i class="fas fa-chart-pie me-2"></i>Reportes de Control de Calidad</h3>
+            </div>
+            <div class="card-body">
+                @if (productos.Count == 0)
+                {
+                    <div class="alert alert-warning">
+                        <i class="fas fa-exclamation-triangle me-2"></i> No se encontraron productos disponibles.
+                    </div>
+                }
+                else
+                {
+                    <form method="get" class="row g-3">
+                        <div class="col-md-5">
+                            <label for="ProductoId" class="form-label">Producto:</label>
+                            <select id="ProductoId" name="productoId" class="form-select" required>
+                                <option value="">-- Selecciona un producto --</option>
+                                @foreach (var producto in productos)
+                                {
+                                    if (producto.Value == productoIdSeleccionado)
+                                    {
+                                        <option value="@producto.Value" selected>@producto.Text</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@producto.Value">@producto.Text</option>
+                                    }
+                                }
+                            </select>
+                        </div>
+                        <div class="col-md-5">
+                            <label for="LoteId" class="form-label">Lote:</label>
+                            <select id="LoteId" name="loteId" class="form-select" required>
+                                <option value="">-- Selecciona un lote --</option>
+                                @foreach (var lote in lotes)
+                                {
+                                    if (lote.Value == loteIdSeleccionado)
+                                    {
+                                        <option value="@lote.Value" selected>@lote.Text</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@lote.Value">@lote.Text</option>
+                                    }
+                                }
+                            </select>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-end">
+                            <button type="submit" class="btn btn-primary w-100">
+                                <i class="fas fa-chart-line"></i> Filtrar
+                            </button>
+                        </div>
+                    </form>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (mostrarGraficos)
+{
+    <div class="card mb-4">
+        <div class="card-header bg-primary text-white">
+            <h4 class="mb-0">Producto: <strong>@nombreProducto</strong></h4>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Lote: <strong>@codigoLote</strong></h5>
+            <p class="card-text">Fecha: <strong>@fechaLote</strong></p>
+        </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4 mb-4">
+        @foreach (var grafico in new[] {
+        new { Id="graficoGrasa", Titulo="Grasa (%)", Datos=grasaJson, Norma=normas.Grasa, Color="rgba(75, 192, 192, 1)" },
+        new { Id="graficoAcidez", Titulo="Acidez", Datos=acidezJson, Norma=normas.Acidez, Color="rgba(153, 102, 255, 1)" },
+        new { Id="graficoProteina", Titulo="Proteína", Datos=proteinaJson, Norma=normas.Proteina, Color="rgba(255, 159, 64, 1)" },
+        new { Id="graficoPH", Titulo="pH", Datos=phJson, Norma=normas.PH, Color="rgba(54, 162, 235, 1)" },
+        new { Id="graficoHumedad", Titulo="Humedad (%)", Datos=humedadJson, Norma=normas.Humedad, Color="rgba(255, 205, 86, 1)" }
+        })
+        {
+            <div class="col">
+                <div class="card shadow-sm border rounded bg-light">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            @grafico.Titulo
+                            <br />
+                            <small class="text-muted">Norma: @grafico.Norma</small>
+                        </h5>
+                        <canvas id="@grafico.Id"></canvas>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+<div class="row">
+    <!-- Sección de Últimas Mediciones -->
+    <div class="col-md-6">
+        <div class="card h-100">
+            <div class="card-header bg-secondary text-white">
+                <h5><i class="fas fa-history me-2"></i>Últimas Mediciones</h5>
+            </div>
+            <div class="card-body">
+                @if (ultimasMediciones.Any())
+                {
+                    <div class="table-responsive">
+                        <table class="table table-sm table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Lote</th>
+                                    <th>Medición</th>
+                                    <th>Grasa</th>
+                                    <th>Acidez</th>
+                                    <th>Proteína</th>
+                                    <th>pH</th>
+                                    <th>Humedad</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var medicion in ultimasMediciones)
+                                {
+                                    <tr>
+                                        <td>@medicion.Lote?.Codigo</td>
+                                        <td>@medicion.NumeroMedicion</td>
+                                        <td>@medicion.Grasa.ToString("0.00")</td>
+                                        <td>@medicion.Acidez.ToString("0.00")</td>
+                                        <td>@medicion.Proteina.ToString("0.00")</td>
+                                        <td>@medicion.PH.ToString("0.00")</td>
+                                        <td>@medicion.Humedad.ToString("0.00")</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                }
+                else
+                {
+                    <p class="text-muted">No hay mediciones recientes.</p>
+                }
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Resumen Estadístico -->
+    <div class="col-md-6">
+        <div class="card h-100">
+            <div class="card-header bg-secondary text-white">
+                <h5><i class="fas fa-chart-bar me-2"></i>Resumen Estadístico</h5>
+            </div>
+            <div class="card-body">
+                <div class="row text-center">
+                    <div class="col-md-4 mb-3">
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h6 class="card-title">Lotes</h6>
+                                <h3 class="text-primary">@conteoLotes</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h6 class="card-title">Productos</h6>
+                                <h3 class="text-success">@conteoProductos</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h6 class="card-title">Mediciones</h6>
+                                <h3 class="text-info">@conteoMediciones</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @if (conteoMediciones > 0)
+                {
+                    <div class="mt-3">
+                        <canvas id="resumenChart" height="200"></canvas>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const productoSelect = document.getElementById("ProductoId");
+            const loteSelect = document.getElementById("LoteId");
+
+            // Al cambiar el producto, actualizar lotes
+            productoSelect.addEventListener("change", function () {
+                const productoId = this.value;
+                loteSelect.innerHTML = '<option value="">-- Selecciona un lote --</option>';
+
+                if (productoId) {
+                    fetch(`/Home/ObtenerLotesPorProducto?productoId=${productoId}`)
+                        .then(response => response.json())
+                        .then(data => {
+                            data.forEach(lote => {
+                                const option = document.createElement("option");
+                                option.value = lote.id;
+                                option.textContent = lote.nombre;
+                                loteSelect.appendChild(option);
+                            });
+                        });
+                }
+            });
+
+            // Graficar resumen
+            const ctx = document.getElementById('resumenChart');
+            if (ctx) {
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Lotes', 'Productos', 'Mediciones'],
+                        datasets: [{
+                            label: 'Conteo',
+                            data: [@conteoLotes, @conteoProductos, @conteoMediciones],
+                            backgroundColor: [
+                                'rgba(54, 162, 235, 0.7)',
+                                'rgba(75, 192, 192, 0.7)',
+                                'rgba(153, 102, 255, 0.7)'
+                            ],
+                            borderColor: [
+                                'rgba(54, 162, 235, 1)',
+                                'rgba(75, 192, 192, 1)',
+                                'rgba(153, 102, 255, 1)'
+                            ],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            }
+
+            @if (mostrarGraficos)
+            {
+                    <text>
+                    // Graficar datos de control de calidad
+                    const etiquetas = @Html.Raw(etiquetasJson);
+                    const datosGrasa = @Html.Raw(grasaJson);
+                    const datosAcidez = @Html.Raw(acidezJson);
+                    const datosProteina = @Html.Raw(proteinaJson);
+                    const datosPH = @Html.Raw(phJson);
+                    const datosHumedad = @Html.Raw(humedadJson);
+
+                    const normas = {
+                        Grasa: Array(datosGrasa.length).fill(@normas.Grasa),
+                        Acidez: Array(datosAcidez.length).fill(@normas.Acidez),
+                        Proteina: Array(datosProteina.length).fill(@normas.Proteina),
+                        PH: Array(datosPH.length).fill(@normas.PH),
+                        Humedad: Array(datosHumedad.length).fill(@normas.Humedad)
+                    };
+
+                    function crearGrafico(canvasId, label, datos, norma, color) {
+                        new Chart(document.getElementById(canvasId), {
+                            type: 'line',
+                            data: {
+                                labels: etiquetas,
+                                datasets: [
+                                    {
+                                        label: label,
+                                        data: datos,
+                                        borderColor: color,
+                                        backgroundColor: color.replace("1)", "0.2)"),
+                                        tension: 0.3,
+                                        borderWidth: 2
+                                    },
+                                    {
+                                        label: 'Norma',
+                                        data: norma,
+                                        borderColor: 'rgba(255, 99, 132, 1)',
+                                        borderDash: [5, 5],
+                                        pointRadius: 0,
+                                        fill: false,
+                                        borderWidth: 2
+                                    }
+                                ]
+                            },
+                            options: {
+                                responsive: true,
+                                plugins: {
+                                    legend: { position: 'top' }
+                                },
+                                scales: {
+                                    y: { beginAtZero: true }
+                                }
+                            }
+                        });
+                    }
+
+                    crearGrafico("graficoGrasa", "Grasa (%)", datosGrasa, normas.Grasa, "rgba(75, 192, 192, 1)");
+                    crearGrafico("graficoAcidez", "Acidez", datosAcidez, normas.Acidez, "rgba(153, 102, 255, 1)");
+                    crearGrafico("graficoProteina", "Proteína", datosProteina, normas.Proteina, "rgba(255, 159, 64, 1)");
+                    crearGrafico("graficoPH", "pH", datosPH, normas.PH, "rgba(54, 162, 235, 1)");
+                    crearGrafico("graficoHumedad", "Humedad (%)", datosHumedad, normas.Humedad, "rgba(255, 205, 86, 1)");
+                    </text>
+            }
+        });
+    </script>
+}

@@ -1,0 +1,67 @@
+﻿@model IEnumerable<ControlCalidadProduccion.Models.Medicion>
+
+@{
+    ViewData["Title"] = "Mediciones";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Nueva Medición</a>
+</p>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+
+<table class="table table-striped table-bordered">
+    <thead class="thead-dark">
+        <tr>
+            <th>Lote</th>
+            <th>Producto</th>
+            <th>Fecha Medición</th>
+            <th>N° Medición</th>
+            <th>Grasa (%)</th>
+            <th>Acidez (%)</th>
+            <th>Proteína (%)</th>
+            <th>pH</th>
+            <th>Humedad (%)</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>@(item.Lote?.Codigo ?? "N/D")</td>
+                    <td>@(item.Producto?.Nombre ?? "N/D")</td>
+                    <td>@item.FechaMedicion.ToString("dd/MM/yyyy HH:mm")</td>
+                    <td>@item.NumeroMedicion</td>
+                    <td>@item.Grasa.ToString("0.00")</td>
+                    <td>@item.Acidez.ToString("0.00")</td>
+                    <td>@item.Proteina.ToString("0.00")</td>
+                    <td>@item.PH.ToString("0.0")</td>
+                    <td>@item.Humedad.ToString("0.00")</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Editar</a>
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">Detalles</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Eliminar</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="10" class="text-center">No hay mediciones registradas.</td>
+            </tr>
+        }
+    </tbody>
+</table>
